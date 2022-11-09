@@ -33,7 +33,7 @@ export const Main = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.9, ease: 'easeOut' }}
-                className='flex justify-between text-lightBlack dark:text-offWhite border border-lightBlack dark:border-offWhite rounded-full mt-48 py-6 px-10 hover:scale-102 transition ease-out duration-300 group hover:border-violet-300'
+                className='flex justify-between text-lightBlack dark:text-offWhite border border-lightBlack dark:border-offWhite rounded-full mt-40 py-6 px-10 hover:scale-102 transition ease-out duration-300 group hover:border-violet-300'
             >
                 <div className='group-hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 transition ease-out duration-300'>
                     Scroll Down
