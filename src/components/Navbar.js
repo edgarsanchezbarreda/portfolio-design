@@ -18,7 +18,7 @@ export const Navbar = () => {
                 // initial={{ opacity: 0, y: 10 }}
                 // animate={{ opacity: 1, y: 0 }}
                 // transition={{ duration: 1, delay: 1.05, ease: 'easeOut' }}
-                className='flex items-center gap-6 md:gap-14 text-xl md:text-lg'
+                className='flex items-center justify-between sm:justify-end gap-6 sm:gap-12  text-md sm:text-lg '
             >
                 <motion.a
                     initial={{ opacity: 0, y: 10 }}
