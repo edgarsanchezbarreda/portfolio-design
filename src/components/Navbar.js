@@ -4,7 +4,7 @@ import { Toggle } from './Toggle';
 
 export const Navbar = () => {
     return (
-        <div className='fixed z-10 top-0 left-0 right-0 flex flex-col sm:flex-row md:justify-between md:items-center pt-8 px-12  text-[13px] text-lightBlack dark:text-offWhite backdrop-blur'>
+        <div className='fixed z-10 top-0 left-0 right-0 flex flex-col sm:flex-row md:justify-between md:items-center pt-8 pb-4 px-12  text-[13px] text-lightBlack dark:text-offWhite backdrop-blur'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Main = () => {
     return (
-        <motion.div className='flex flex-col self-center bg-offWhite dark:bg-lightBlack pt-12 sm:pt-8 md:pt-12md:mx-12 md:max-w-3xl mt-[128px]'>
+        <motion.div className='flex flex-col self-center bg-offWhite dark:bg-lightBlack pt-12 sm:pt-4 md:pt-12 md:mx-12 md:max-w-3xl mt-[128px]'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
