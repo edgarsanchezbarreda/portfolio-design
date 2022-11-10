@@ -4,30 +4,32 @@ import { Toggle } from './Toggle';
 
 export const Navbar = () => {
     return (
-        <div className='flex flex-col md:flex-row md:justify-between pt-8 md:mx-12  text-lightBlack dark:text-offWhite'>
+        <div className='fixed z-10 top-0 left-0 right-0 flex flex-col sm:flex-row md:justify-between md:items-center pt-8 px-12  text-[13px] text-lightBlack dark:text-offWhite backdrop-blur'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.95, ease: 'easeOut' }}
-                className='pb-8'
+                className='w-full mb-2'
             >
-                <h1 className='text-5xl md:text-4xl'>EdgarS.&copy;</h1>
+                <a href='#top'>
+                    <h1 className='text-5xl md:text-4xl'>EdgarS.&copy;</h1>
+                </a>
             </motion.div>
 
             <motion.div
                 // initial={{ opacity: 0, y: 10 }}
                 // animate={{ opacity: 1, y: 0 }}
                 // transition={{ duration: 1, delay: 1.05, ease: 'easeOut' }}
-                className='flex items-center justify-between sm:justify-end gap-6 sm:gap-12  text-md sm:text-lg '
+                className='flex items-center justify-between pt-4 sm:pt-0 gap-8 sm:gap-6 md:gap-12 text-md md:text-lg'
             >
                 <motion.a
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 1.05, ease: 'easeOut' }}
-                    className='transition ease-out duration-300 hover:underline  hover:underline-offset-8'
-                    href='/#'
+                    className='transition ease-out duration-300 hover:underline  hover:underline-offset-8 whitespace-nowrap scroll-smooth'
+                    href='#AboutMe'
                 >
-                    Work
+                    About Me
                 </motion.a>
                 <motion.a
                     initial={{ opacity: 0, y: 10 }}
@@ -36,7 +38,7 @@ export const Navbar = () => {
                     className='hover:underline  hover:underline-offset-8'
                     href='/#'
                 >
-                    About Me
+                    Projects
                 </motion.a>
                 <motion.a
                     initial={{ opacity: 0, y: 10 }}

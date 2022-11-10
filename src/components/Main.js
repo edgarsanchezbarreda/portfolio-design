@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Main = () => {
     return (
-        <motion.div className='flex flex-col self-center pt-20 md:mx-12 md:max-w-3xl'>
+        <motion.div className='flex flex-col self-center bg-offWhite dark:bg-lightBlack pt-12 sm:pt-8 md:pt-12md:mx-12 md:max-w-3xl mt-[128px]'>
             <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -29,11 +29,12 @@ export const Main = () => {
                 </p>
             </motion.div>
 
-            <motion.div
+            <motion.a
+                href='#AboutMe'
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.9, ease: 'easeOut' }}
-                className='flex justify-between text-lightBlack dark:text-offWhite border border-lightBlack dark:border-offWhite rounded-full mt-40 py-6 px-10 hover:scale-102 transition ease-out duration-300 group hover:border-violet-300'
+                className='flex justify-between text-lightBlack dark:text-offWhite border border-lightBlack dark:border-offWhite rounded-full mt-48 py-6 px-10 hover:scale-102 transition ease-out duration-300 group hover:border-violet-300'
             >
                 <div className='group-hover:text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 transition ease-out duration-300'>
                     Scroll Down
@@ -43,7 +44,7 @@ export const Main = () => {
                         -&gt;
                     </span>
                 </div>
-            </motion.div>
+            </motion.a>
         </motion.div>
     );
 };
